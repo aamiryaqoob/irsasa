@@ -10,12 +10,15 @@ const Blogs = () => {
   return (
     <section className={theme ? dark.Blog_section : styles.Blog_section}>
       <div className={theme ? dark.container : styles.container}>
+      
         <div className={styles.card_div}>
+        
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((val) => (
             <div key={val} className={theme ? dark.card3 : styles.card3}>
               <div className={styles.arrow3}>
                 <Image src="/images/arrow.png" width={15} height={15} />
               </div>
+              
               <img
                 style={{
                   width: "100%",
@@ -30,9 +33,12 @@ const Blogs = () => {
                 <h1>7 Custom Homes</h1>
                 <p>Custom Software Development for Construction Company</p>
               </div>
+              
             </div>
           ))}
+          
         </div>
+        
       </div>
     </section>
   );
